@@ -18,7 +18,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Railway injects PORT env var
-ENV PORT=8001
 EXPOSE ${PORT}
 
 # Shell form so $PORT is expanded at runtime
